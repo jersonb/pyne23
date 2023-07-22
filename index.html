@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -10,70 +9,86 @@
     body {
         font-family: monospace;
         background-color: rgb(31, 31, 31);
+        color: rgb(175, 175, 175);
+        font-size: larger;
     }
 
     .slide-template {
-        color: rgb(175, 175, 175);
-        font-size: larger;
-        height: 90vh;
-        display: grid;
-        grid-template-areas: "a b" "c c";
-        grid-template-rows: 20% 80%;
-        grid-template-columns: 50% 50%;
-        padding: 1em;
+        height: 95vh;
+        margin-bottom: 2em;
+
+        background-image:
+            url(https://2023.pythonnordeste.org/img/assets/FITINHAS_VOANDO.png),
+            url(https://2023.pythonnordeste.org/img/assets/LOGO.png);
+        background-size: 15%, 15%;
+        background-position: top left, top right;
+        background-repeat: no-repeat;
+
         border-bottom-color: rgb(5, 24, 41);
         border-bottom-style: ridge;
-    }
 
-    .content {
-        color: rgb(175, 175, 175);
-        font-size: larger;
-        height: 90vh;
         display: grid;
-        grid-template-areas: "a b" "c c";
-        grid-template-rows: 20% 80%;
-        grid-template-columns: 50% 50%;
-        padding: 1em;
-        border-bottom-color: rgb(5, 24, 41);
+        grid-template-columns: 1fr 2fr 2fr 1fr;
+        grid-template-rows: auto auto auto auto;
     }
 
-    .left {
-        grid-area: a;
-    }
+    .slide1 .title {
+        font-size: 3em;
+        grid-row-start: 3;
+        grid-column-start: 2;
+        grid-column-end: 4;
 
-    .rigth {
-        grid-area: b;
-        display: flex;
-        align-items: flex-start;
-        justify-content: right;
-    }
-
-    .center {
-        grid-area: c;
-        justify-self: center;
         text-align: center;
-        margin-top: 2em;
     }
 
-    img {
-        max-width: 50%;
+    .slide1 h1 {
+        grid-row-start: 4;
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        text-align: center;
+    }
+
+    a.next-page:link,
+    :visited {
+        text-decoration: inherit;
+        color: inherit;
+        cursor: auto;
     }
 </style>
 
 <body>
+    <a class="next-page" href="#2" id="1">
+        <div class="slide-template slide1">
+            <p class="title">Hackeando o aprendizado de lógica de programação com<br><b>TDD e Python</b></p>
+            <h1 >Jerson Brito</h1>
+        </div>
+    </a>
 
-    <div class="slide-template">
-        <div class="left">
-            <img src="https://2023.pythonnordeste.org/img/assets/FITINHAS_VOANDO.png">
+    <a class="next-page" href="#3" id="2">
+        <div class="slide-template">
+            <h1>2</h1>
         </div>
-        <div class="rigth">
-            <img src="https://2023.pythonnordeste.org/img/assets/LOGO.png">
+    </a>
+
+    <a class="next-page" href="#4" id="3">
+        <div class="slide-template">
+            <h3>3</h3>
         </div>
-        <div class="center">
-            <h1>Hakeando o aprendizado de lógica de programação com TDD e Python</h1>
-            <h2>Jerson Brito</h2>
+    </a>
+
+    <a class="next-page" href="#1" id="4">
+        <div class="slide-template">
+            <h4>4</h4>
         </div>
-    </div>
+    </a>
+
 </body>
 
 </html>
