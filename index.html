@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palestra</title>
+</head>
+<style>
+    body {
+        font-family: monospace;
+        background-color: rgb(31, 31, 31);
+    }
+
+    .slide-template {
+        color: rgb(175, 175, 175);
+        font-size: larger;
+        height: 90vh;
+        display: grid;
+        grid-template-areas: "a b" "c c";
+        grid-template-rows: 20% 80%;
+        grid-template-columns: 50% 50%;
+        padding: 1em;
+        border-bottom-color: rgb(5, 24, 41);
+        border-bottom-style: ridge;
+    }
+
+    .content {
+        color: rgb(175, 175, 175);
+        font-size: larger;
+        height: 90vh;
+        display: grid;
+        grid-template-areas: "a b" "c c";
+        grid-template-rows: 20% 80%;
+        grid-template-columns: 50% 50%;
+        padding: 1em;
+        border-bottom-color: rgb(5, 24, 41);
+        /* border-bottom-style: ridge; */
+    }
+
+    .left {
+        grid-area: a;
+    }
+
+    .rigth {
+        grid-area: b;
+        display: flex;
+        align-items: flex-start;
+        justify-content: right;
+    }
+
+    .center {
+        grid-area: c;
+        justify-self: center;
+        text-align: center;
+        margin-top: 2em;
+    }
+
+    img {
+        max-width: 50%;
+    }
+</style>
+
+<body>
+
+    <div class="slide-template">
+        <div class="left">
+            <img src="https://2023.pythonnordeste.org/img/assets/FITINHAS_VOANDO.png">
+        </div>
+        <div class="rigth">
+            <img src="https://2023.pythonnordeste.org/img/assets/LOGO.png">
+        </div>
+        <div class="center">
+            <h1>Hakeando o aprendizado de lógica de programação com TDD e Python</h1>
+            <h2>Jerson Brito</h2>
+        </div>
+    </div>
+</body>
+
+</html>
