@@ -8,8 +8,8 @@
 <style>
     body {
         font-family: monospace;
-        background-color: rgb(31, 31, 31);
-        color: rgb(175, 175, 175);
+        background-color: rgb(27, 31, 35);
+        color: rgb(242, 242, 242);
         font-size: larger;
     }
 
@@ -30,6 +30,7 @@
         display: grid;
         grid-template-columns: 1fr 2fr 2fr 1fr;
         grid-template-rows: auto auto auto auto;
+        place-items: center;
     }
 
     .slide1 .title {
@@ -40,11 +41,74 @@
 
         text-align: center;
     }
-
+    
     .slide1 h1 {
         grid-row-start: 4;
         grid-column-start: 2;
         grid-column-end: 4;
+    }
+    
+    .slide1 .foto-qr-code-palestra{
+        grid-row-start: 6;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        width: 200px;
+        border-radius: 2em;
+        border: 6px solid black;
+    }
+
+    .slide2 h1{
+        font-size: 40px;
+    }
+
+    .slide2 h2{
+        font-size: 35px;
+    }
+
+    .slide2 .parte1 {
+        grid-row-start: 2;
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+
+    .slide2 .parte2 {
+        grid-row-start: 3;
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+
+    .slide3 .foto-linkedin {
+        width: 400px;
+        grid-row-start: 2;
+        grid-row-end: 5;
+        grid-column-start: 2;
+
+        border-radius: 16em;
+        border: 6px solid black;
+        margin: 2em;
+    }
+
+    .slide3 .background-image{
+        opacity: 50%;
+    }
+
+    .slide3 .foto-qr-code-linkedin {
+        width: 200px;
+        grid-row-start: 2;
+        grid-column-start: 3;
+
+        border-radius: 2em;
+        border: 6px solid black;
+        margin-top: 2em;
+    }
+
+    .slide3 .foto-qr-code-github {
+        width: 200px;
+        grid-row-start: 3;
+        grid-column-start: 3;
+
+        border-radius: 2em;
+        border: 6px solid black;
     }
 
     h1,
@@ -67,25 +131,39 @@
     <a class="next-page" href="#2" id="1">
         <div class="slide-template slide1">
             <p class="title">Hackeando o aprendizado de lógica de programação com<br><b>TDD e Python</b></p>
-            <h1 >Jerson Brito</h1>
+            <h1>Jerson Brito</h1>
+            <img class="foto-qr-code-palestra" src="https://media.licdn.com/dms/image/D4D0BAQEWrrbdUgZq_w/company-logo_200_200/0/1682349378681/python_nordeste_2022_logo?e=1701302400&v=beta&t=ezwDY2Hcp37ZkbiJK6ma-mX7X9a4AJjnpaDLaFBZ6qk" style="opacity: 30%;" alt="">    
+            <img class="foto-qr-code-palestra" src="imgs/qrcode_jersonb.github.io.png" alt="qrcode plaestra">
         </div>
     </a>
 
     <a class="next-page" href="#3" id="2">
-        <div class="slide-template">
-            <h1>2</h1>
+        <div class="slide-template slide2">
+            <div class="parte1">
+                <h2>Você que está no início da carreira:</h2>
+                <h1>Como você acha que vai ser, com mais experiência?</h1>
+            </div>
+            <div class="parte2">
+                <h2>Você que já é experiente:</h2>
+                <h1>Qual o concelho você daria para quem está inciando?</h1>
+            </div>
         </div>
     </a>
 
     <a class="next-page" href="#4" id="3">
-        <div class="slide-template">
-            <h3>3</h3>
+        <div class="slide-template slide3">
+            <img class="foto-linkedin"
+                src="https://media.licdn.com/dms/image/C4E03AQHJ4I25e6u0eg/profile-displayphoto-shrink_800_800/0/1552444316011?e=1698883200&v=beta&t=xz1yS0ieVcHqD2zQn_xZybBW7EKDg4cjGF5sPfVJcSk"
+                alt="foto linkledin">
+            <img class="foto-qr-code-linkedin" src="imgs/qrcode_www.linkedin.com.png" alt="qrcode linkedin">
+            <img class="foto-qr-code-linkedin background-image" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="qrcode linkedin">
+            <img class="foto-qr-code-github" src="imgs/qrcode_github.com.png" srcset="qrcode github">
+            <img class="foto-qr-code-github background-image" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" srcset="qrcode github">
         </div>
     </a>
 
     <a class="next-page" href="#1" id="4">
         <div class="slide-template">
-            <h4>4</h4>
         </div>
     </a>
 
