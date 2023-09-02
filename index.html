@@ -7,11 +7,294 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <style>
-   
-</style>
 
+body {
+    font-family: monospace;
+    background-color: rgb(27, 31, 35);
+    color: rgb(242, 242, 242);
+    font-size: larger;
+}
+
+.background-image {
+    opacity: 50%;
+}
+
+.slide-template {
+    height: 95vh;
+    margin-bottom: 2em;
+
+    background-image:
+        url(https://2023.pythonnordeste.org/img/assets/FITINHAS_VOANDO.png),
+        url(https://2023.pythonnordeste.org/img/assets/LOGO.png);
+    background-size: 15%, 15%;
+    background-position: top left, top right;
+    background-repeat: no-repeat;
+
+    border-bottom-color: rgb(5, 24, 41);
+    border-bottom-style: ridge;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    place-items: center;
+}
+
+.slide1 .titulo {
+    font-size: 8vh;
+    grid-row-start: 3;
+    grid-column-start: 2;
+    grid-column-end: 4;
+
+    text-align: center;
+}
+
+.slide1 .nome {
+    grid-row-start: 4;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    font-size: 4vh;
+}
+
+.slide1 .foto-qr-code-palestra {
+    width: 25vh;
+    grid-row-start: 6;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    border-radius: 2em;
+    border: 6px solid black;
+}
+
+.slide2 h1 {
+    font-size: 6vh;
+}
+
+.slide2 h2 {
+    font-size: 5vh;
+}
+
+.slide2 .parte1 {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.slide2 .parte2 {
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.slide3 .foto-linkedin {
+    width: 80vh;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-column-start: 2;
+
+    border-radius: 50%;
+    border: 1vh solid black;
+    margin: 2em;
+}
+
+.slide3 .foto-qr-code-linkedin {
+    width: 40vh;
+    grid-row-start: 2;
+    grid-column-start: 3;
+
+    border-radius: 15%;
+    border: 1vh solid black;
+    margin-top: 2em;
+}
+
+.slide3 .foto-qr-code-github {
+    width: 40vh;
+    grid-row-start: 3;
+    grid-column-start: 3;
+
+    border-radius: 15%;
+    border: 1vh solid black;
+}
+
+.slide4 h1 {
+    font-size: 16vh;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.slide5 img {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    width: 64vw;
+}
+
+.slide6 img {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    width: 120vh;
+}
+
+.slide7 img {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    width: 110vh;
+}
+
+.slide8 img {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    width: 110vh;
+}
+
+.slide-final h1 {
+    font-size: 16vh;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.slide-final h2 {
+    font-size: 16vh;
+    grid-row-start: 3;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    text-align: center;
+}
+
+a.next-page:link,
+:visited {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .slide-template {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .slide1 .titulo {
+        font-size: 8vw;
+        grid-row-start: 1;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    .slide1 .nome {
+        font-size: 6vw;
+        grid-row-start: 2;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    .slide1 .foto-qr-code-palestra {
+        grid-row-start: 3;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    .slide2 {
+        grid-template-rows: 0.5fr 2fr 2fr;
+    }
+
+    .slide2 h1 {
+        font-size: 6vw;
+    }
+
+    .slide2 h2 {
+        font-size: 5vw;
+    }
+
+    .slide3 .foto-linkedin {
+        width: 30vh;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 2;
+    }
+
+    .slide3 .foto-qr-code-linkedin {
+        width: 20vh;
+        grid-row-start: 2;
+        grid-column-start: 2;
+    }
+
+    .slide3 .foto-qr-code-github {
+        width: 20vh;
+        grid-row-start: 3;
+        grid-column-start: 2;
+    }
+
+    .slide5 img {
+        grid-row-start: 2;
+        grid-column-start: 1;
+        width: 90vw;
+    }
+
+    .slide6 img {
+        grid-row-start: 2;
+        grid-column-start: 1;
+        width: 190vh;
+    }
+
+    
+    .slide6 img {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        width: 80vw;
+    }
+    .slide7 img {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        width: 80vw;
+    }
+    .slide8 img {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        width: 80vw;
+    }
+
+
+    .slide9 img {
+        grid-row-start: 2;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        width: 110vh;
+    }
+
+    .slide-final h1 {
+        font-size: 16vw;
+        grid-row-start: 1;
+        grid-column-start: 1;
+    }
+
+    .slide-final h2 {
+        font-size: 16vw;
+        grid-row-start: 2;
+        grid-column-start: 1;
+    }
+}
+
+</style>
 <body>
-    <a class="next-page" href="#2" id="1">
+    <a class="next-page"  id="1">
         <div class="slide-template slide1">
             <p class="titulo">Hackeando o aprendizado de lógica de programação com<br><b>TDD e Python</b></p>
             <h1 class="nome">Jerson Brito</h1>
@@ -22,20 +305,20 @@
         </div>
     </a>
 
-    <a class="next-page" href="#3" id="2">
+    <a class="next-page"  id="2">
         <div class="slide-template slide2">
             <div class="parte1">
-                <h2>Você que está no início da carreira:</h2>
-                <h1>Como você acha que vai ser, quando estiver com mais experiência?</h1>
+                <h2>Você que está no início:</h2>
+                <h1>Não seria legal saber de coisas que te ajudariam a evoluir na carreira?</h1>
             </div>
             <div class="parte2">
                 <h2>Você que já é experiente:</h2>
-                <h1>Qual o concelho você daria para quem está inciando?</h1>
+                <h1>Qual o concelho você daria para ajudar quem está inciando?</h1>
             </div>
         </div>
     </a>
 
-    <a class="next-page" href="#4" id="3">
+    <a class="next-page"  id="3">
         <div class="slide-template slide3">
             <img class="foto-linkedin"
                 src="https://media.licdn.com/dms/image/C4E03AQHJ4I25e6u0eg/profile-displayphoto-shrink_800_800/0/1552444316011?e=1698883200&v=beta&t=xz1yS0ieVcHqD2zQn_xZybBW7EKDg4cjGF5sPfVJcSk"
@@ -49,7 +332,37 @@
         </div>
     </a>
 
-    <a class="next-page" href="#1" id="4">
+    <a class="next-page" id="4">
+        <div class="slide-template slide4 slide-final">
+            <h1>Como eram os primeiros programas de vocês?</h1>
+        </div>
+    </a>
+    
+    <a class="next-page" id="5">
+        <div class="slide-template slide5">
+           <img src="imgs/code_firts.png" alt="primeiros códigos" >
+        </div>
+    </a>
+
+    <a class="next-page"  id="6">
+        <div class="slide-template slide6">
+           <img src="imgs/code_last.png" alt="evolução dos códigos" >
+        </div>
+    </a>
+
+    <a class="next-page" id="7">
+        <div class="slide-template slide7">
+           <img src="imgs/code_last_2.png" alt="evolução dos códigos em foco" >
+        </div>
+    </a> 
+
+    <a class="next-page" id="8">
+        <div class="slide-template slide8">
+           <img src="imgs/code_last_asserts.png" alt="evolução dos códigos em foco com testes" >
+        </div>
+    </a>
+
+    <a class="next-page" id="9">
         <div class="slide-template slide-final">
             <h1>Obrigado</h1>
             <h2>Python NE!</h2>
@@ -59,16 +372,25 @@
     <div class="slide-template slide-final">
         <ul>
             <li>
-                <a href="https://jersonb.github.io/pyne23" target="_blank" rel="noopener noreferrer">Slides da palestra</a>
+                <a href="https://jersonb.github.io/pyne23" target="_blank" >Slides da palestra</a>
             </li>
             <li>
-                <a href="https://linkedin.com/in/jersonb" target="_blank" rel="noopener noreferrer">Linkedin</a>
+                <a href="https://linkedin.com/in/jersonb" target="_blank" >Linkedin</a>
             </li>
             <li>
-                <a href="https://github.com/jersonb" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://github.com/jersonb" target="_blank" >GitHub</a>
             </li>
         </ul>
     </div>
 </body>
-
+<script>
+    function setHref() {
+        document
+        .querySelectorAll('.next-page')
+        .forEach(element => {
+             element.setAttribute('href', `#${parseInt(element.getAttribute('id'))+1}`);
+        });
+    }
+    setHref()
+</script>
 </html>
