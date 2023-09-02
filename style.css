@@ -1,0 +1,205 @@
+body {
+    font-family: monospace;
+    background-color: rgb(27, 31, 35);
+    color: rgb(242, 242, 242);
+    font-size: larger;
+}
+
+.background-image {
+    opacity: 50%;
+}
+
+.slide-template {
+    height: 95vh;
+    margin-bottom: 2em;
+
+    background-image:
+        url(https://2023.pythonnordeste.org/img/assets/FITINHAS_VOANDO.png),
+        url(https://2023.pythonnordeste.org/img/assets/LOGO.png);
+    background-size: 15%, 15%;
+    background-position: top left, top right;
+    background-repeat: no-repeat;
+
+    border-bottom-color: rgb(5, 24, 41);
+    border-bottom-style: ridge;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    place-items: center;
+}
+
+.slide1 .titulo {
+    font-size: 8vh;
+    grid-row-start: 3;
+    grid-column-start: 2;
+    grid-column-end: 4;
+
+    text-align: center;
+}
+
+.slide1 .nome {
+    grid-row-start: 4;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    font-size: 4vh;
+}
+
+.slide1 .foto-qr-code-palestra {
+    width: 25vh;
+    grid-row-start: 6;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    border-radius: 2em;
+    border: 6px solid black;
+}
+
+.slide2 h1 {
+    font-size: 6vh;
+}
+
+.slide2 h2 {
+    font-size: 5vh;
+}
+
+.slide2 .parte1 {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.slide2 .parte2 {
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.slide3 .foto-linkedin {
+    width: 80vh;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-column-start: 2;
+
+    border-radius: 50%;
+    border: 1vh solid black;
+    margin: 2em;
+}
+
+.slide3 .foto-qr-code-linkedin {
+    width: 40vh;
+    grid-row-start: 2;
+    grid-column-start: 3;
+
+    border-radius: 15%;
+    border: 1vh solid black;
+    margin-top: 2em;
+}
+
+.slide3 .foto-qr-code-github {
+    width: 40vh;
+    grid-row-start: 3;
+    grid-column-start: 3;
+
+    border-radius: 15%;
+    border: 1vh solid black;
+}
+
+.slide-final h1 {
+    font-size: 16vh;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.slide-final h2 {
+    font-size: 16vh;
+    grid-row-start: 3;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    text-align: center;
+}
+
+a.next-page:link,
+:visited {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .slide-template {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .slide1 .titulo {
+        font-size: 8vw;
+        grid-row-start: 1;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    .slide1 .nome {
+        font-size: 6vw;
+        grid-row-start: 2;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    .slide1 .foto-qr-code-palestra {
+        grid-row-start: 3;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    .slide2 {
+        grid-template-rows: 0.5fr 2fr 2fr;
+    }
+
+    .slide2 h1 {
+        font-size: 6vw;
+    }
+
+    .slide2 h2 {
+        font-size: 5vw;
+    }
+
+    .slide3 .foto-linkedin {
+        width: 30vh;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 2;
+    }
+
+    .slide3 .foto-qr-code-linkedin {
+        width: 20vh;
+        grid-row-start: 2;
+        grid-column-start: 2;
+    }
+
+    .slide3 .foto-qr-code-github {
+        width: 20vh;
+        grid-row-start: 3;
+        grid-column-start: 2;
+    }
+
+    .slide-final h1 {
+        font-size: 16vw;
+        grid-row-start: 1;
+        grid-column-start: 1;
+    }
+
+    .slide-final h2 {
+        font-size: 16vw;
+        grid-row-start: 2;
+        grid-column-start: 1;
+    }
+}
