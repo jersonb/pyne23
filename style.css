@@ -129,14 +129,14 @@ body {
     grid-row-start: 2;
     grid-column-start: 2;
     grid-column-end: 4;
-    width: 110vh;
+    width: 120vh;
 }
 
 .slide8 img {
     grid-row-start: 2;
     grid-column-start: 2;
     grid-column-end: 4;
-    width: 110vh;
+    width: 120vh;
 }
 
 .slide-final h1 {
