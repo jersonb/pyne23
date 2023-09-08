@@ -1,6 +1,6 @@
-body {
+html {
     font-family: monospace;
-    background-color: rgb(27, 31, 35);
+    background-color:#011F2A;
     color: rgb(242, 242, 242);
     font-size: larger;
 }
@@ -29,7 +29,7 @@ body {
     place-items: center;
 }
 
-.slide1 .titulo {
+.titulo {
     font-size: 8vh;
     grid-row-start: 3;
     grid-column-start: 2;
@@ -118,7 +118,21 @@ body {
     width: 64vw;
 }
 
-.slide6 img {
+.slide6 h1{
+    font-size: 8vh;
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.slide5 h1{
+    font-size: 8vh;
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+/* .slide6 img {
     grid-row-start: 2;
     grid-column-start: 2;
     grid-column-end: 4;
@@ -137,7 +151,7 @@ body {
     grid-column-start: 2;
     grid-column-end: 4;
     width: 120vh;
-}
+} */
 
 .slide-final h1 {
     font-size: 16vh;
