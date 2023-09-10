@@ -10,141 +10,211 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style-mobile.css">
 </head>
+
 <body>
-    <a class="next-page"  id="1">
-        
-        <div class="slide-template slide1">
-            <p class="titulo">Hackeando o aprendizado de lógica de programação com<br><b>TDD e Python</b></p>
-            <h1 class="nome">Jerson Brito</h1>
-            <img class="foto-qr-code-palestra background-image"
-                src="https://media.licdn.com/dms/image/D4D0BAQEWrrbdUgZq_w/company-logo_200_200/0/1682349378681/python_nordeste_2022_logo?e=1701302400&v=beta&t=ezwDY2Hcp37ZkbiJK6ma-mX7X9a4AJjnpaDLaFBZ6qk"
-                alt="logo py NE 2023">
-            <img class="foto-qr-code-palestra" src="imgs/qrcode_jersonb.github.io.png" alt="qrcode plaestra">
+    <a class="next-page">
+        <div class="slide opening">
+            <h1>Hackeando o aprendizado de lógica de programação com<br><b>TDD e Python</b></h1>
+            <h2>Jerson Brito</h1>
+                <div class="qr-code-content">
+                    <img class="qr-code-palestra background-image" src="imgs/python-nordeste-2022-logo.jpg"
+                        alt="logo py NE 2023">
+                    <img class="qr-code-palestra" src="imgs/qrcode_jersonb.github.io.png" alt="qrcode plaestra">
+
+                </div>
         </div>
     </a>
 
-    <a class="next-page"  id="2">
-        <div class="slide-template slide2">
-            <div class="parte1">
-                <h2>Você que está no início:</h2>
-                <h1>Não seria legal saber de coisas que te ajudariam a evoluir na carreira?</h1>
-            </div>
-            <div class="parte2">
-                <h2>Você que já é experiente:</h2>
-                <h1>Qual o concelho você daria para ajudar quem está inciando?</h1>
-            </div>
+    <a class="next-page">
+        <div class="slide questions">
+            <h3>Você que está no início:</h3>
+            <h2>Não seria legal saber de coisas que te ajudariam a evoluir na carreira?</h2>
+            <h3>Você que já é experiente:</h3>
+            <h2>Qual o concelho você daria para ajudar quem está inciando?</h2>
         </div>
     </a>
 
-    <a class="next-page"  id="3">
-        <div class="slide-template slide3">
-            <img class="foto-linkedin"
-                src="https://media.licdn.com/dms/image/C4E03AQHJ4I25e6u0eg/profile-displayphoto-shrink_800_800/0/1552444316011?e=1698883200&v=beta&t=xz1yS0ieVcHqD2zQn_xZybBW7EKDg4cjGF5sPfVJcSk"
-                alt="foto linkledin">
-            <img class="foto-qr-code-linkedin" src="imgs/qrcode_www.linkedin.com.png" alt="qrcode linkedin">
-            <img class="foto-qr-code-linkedin background-image"
-                src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="qrcode linkedin">
-            <img class="foto-qr-code-github" src="imgs/qrcode_github.com.png" alt="qrcode github">
-            <img class="foto-qr-code-github background-image" src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
-                alt="qrcode github">
+    <a class="next-page">
+        <div class="slide links">
+            <img class="foto-linkedin" src="imgs/linkedin-avatar.jpg" alt="foto linkledin">
+
+            <div class="qr-code-linkedin-content">
+                <img class="foto-qr-code-linkedin background-image" src="imgs/linkedin-logo.png" alt="qrcode linkedin">
+                <img class="foto-qr-code-linkedin" src="imgs/qrcode_www.linkedin.com.png" alt="qrcode linkedin">
+            </div>
+            <div class="qr-code-github-content">
+                <img class="foto-qr-code-github background-image" src="imgs/github-logo.png" alt="qrcode github">
+                <img class="foto-qr-code-github" src="imgs/qrcode_github.com.png" alt="qrcode github">
+            </div>
         </div>
     </a>
 
     <a class="next-page" id="4">
-        <div class="slide-template slide4 slide-final">
+        <div class="slide question-first-code">
             <h1>Como eram os primeiros programas de vocês?</h1>
         </div>
     </a>
-    
+
     <a class="next-page" id="5">
-        <div class="slide-template slide5">
+        <div class="slide standard-approach">
             <h1>Abordagem Padrão</h1>
-           <img src="imgs/code_firts.png" alt="primeiros códigos" >
+            <img src="imgs/code_firts.png" alt="primeiros códigos">
         </div>
     </a>
 
-    <a class="next-page" id="6">
-        <div class="slide-template slide5">
-            <h1>Abordagem Padrão</h1>
-            <img src="imgs/code_firts.png" alt="primeiros códigos" >
-        </div>
-    </a>
-    
-    <a class="next-page" id="7">
-        <div class="slide-template slide6">
+    <a class="next-page">
+        <div class="slide standard-approach-problems">
             <h1>Problemas da Abordagem Padrão</h1>
-            <ul style="font-size: 7vh; grid-row-start:2; grid-column-start: 2; grid-column-end: 4;">
-                <li style="padding: 50px;">
-                    Pensar console como <i>UI</i> 
+            <ul>
+                <li>
+                    <h3>Pensar console como <i>UI</i> </h3>
                 </li>
-                <li style="padding: 50px;">
-                    <i>Input</i> manual a cada execução
+                <li>
+                    <h3><i>Input</i> manual a cada execução</h3>
                 </li>
-                <li style="padding: 50px;">
-                    Conversão de tipos
+                <li>
+                    <h3>Conversão de tipos</h3>
                 </li>
-                <li style="padding: 50px;">
-                    Tendência de código macarrônico
+                <li>
+                    <h3>Tendência de código macarrônico</h3>
                 </li>
-                <li style="padding: 50px;">
-                    Baixa previsibilidade do resultado
+                <li>
+                    <h3>Baixa previsibilidade do resultado</h3>
                 </li>
             </ul>
         </div>
     </a>
+    <a class="next-page">
+        <div class="slide standard-approach-problems-example">
+            <h3>Problemas da Abordagem Padrão</h3>
 
-    <a class="next-page" id="8">
-        <div class="slide-template slide6">
+            <img src="imgs/simple_code.png" alt="" srcset="">
+            <h3>4/5 linhas não são de lógica</h3>
+        </div>
+    </a>
+
+    <a class="next-page">
+        <div class="slide slide6">
+            <h1>Como resolver??</h1>
+            <h1>Usando TDD!!</h1>
+        </div>
+    </a>
+
+    <a class="next-page">
+        <div class="slide tdd-explanation">
+            <div>
+                <h1>TDD</h1>
+                <h3>Test Driven Development</h3>
+                <h3>Desenvolvimento Orientado por Testes</h3>
+            </div>
+            <img class="gif-tdd" src="imgs/TDD.gif" alt="gif falha -> passa -> refatora">
+        </div>
+    </a>
+
+    <a class="next-page">
+        <div class="slide tdd-resolves">
             <h1>O que o uso de testes resolveria?</h1>
-            <ul style="font-size: 7vh; grid-row-start:2; grid-column-start: 2; grid-column-end: 4;">
-                <li style="padding: 100px;">
-                    Foco total no código 
-                </li>                
-                <li style="padding: 100px;">
-                    Tendência de vários trechos de código com responsabilidade única
+            <ul>
+                <li>
+                    <h3>Foco total no código</h3>
                 </li>
-                <li style="padding: 100px;">
-                    Previsibilidade do resultado
+                <li>
+                    <h3>Tendência de vários trechos de código com responsabilidade única</h3>
+                </li>
+                <li>
+                    <h3>Previsibilidade do resultado</h3>
                 </li>
             </ul>
         </div>
     </a>
-
-    <a class="next-page" id="9">
-        7
-        <div class="slide-template slide7">
-           <img src="imgs/code_last_2.png" alt="evolução dos códigos em foco" >
+    <a class="next-page">
+        <div class="slide using-tests">
+            <h3>Usando testes</h3>
+            <img class="gif-tdd" src="imgs/simple_code_assert.png" alt="gif falha -> passa -> refatora">
+            <h3>1 linha de lógica 3 de confirmação</h3>
         </div>
-    </a> 
-
-    <a class="next-page" id="10">
-        8
-        <div class="slide-template slide8">
-           <img src="imgs/code_last_asserts.png" alt="evolução dos códigos em foco com testes" >
+    </a>
+    <a class="next-page">
+        <div class="slide jokenpo-example">
+            <h3>Jokenpo</h3>
+            <img src="imgs/code_last_2.png" alt="evolução dos códigos em foco">
+            <h3>Diga se esse código funciona em 2s</h3>
         </div>
     </a>
 
-    <a class="next-page" id="11">
-
-        <div class="slide-template slide-final">
-            <h1>Obrigado</h1>
-            <h2>Python NE!</h2>
+    <a class="next-page">
+        <div class="slide jokenpo-example-asserts">
+            <h3>Jokenpo</h3>
+            <img src="imgs/code_last_asserts.png" alt="evolução dos códigos em foco com testes">
+            <h3>E com os asserts??</h3>
         </div>
     </a>
 
-    <div class="slide-template slide-final">
+    <a class="next-page">
+        <div class="slide considerations">
+            <h1>Cosiderações</h1>
+            <ul>
+                <li>
+                    <h3>
+                        TDD é um conhecimento valorizado
+                    </h3>
+                </li>
+                <li>
+                    <h3>
+                        Foco em praticar lógica não UI
+                    </h3>
+                </li>
+                <li>
+                    <h3>
+                        TDD possibilita direcionar um melhor direcionamento
+                    </h3>
+                </li>
+                <li>
+                    <h3>
+                        TDD mitiga regressão no código
+                    </h3>
+                </li>
+                <li>
+                    <h3>TDD é para todos</h3>
+                </li>
+            </ul>
+       
+        </div>
+    </a>
+
+    <a href="#0">
+        <div class="slide slide-final">
+            <h1>Obrigado Python NE!</h1>
+            <h1>Valeu Salvador!</h1>
+        </div>
+    </a>
+
+    <div class="slide slide-final">
         <ul>
             <li>
-                <a href="https://jersonb.github.io/pyne23" target="_blank" >Slides da palestra</a>
+                <a href="https://jersonb.github.io/pyne23" target="_blank">
+                    <h1>
+                        Slides da palestra
+                    </h1>
+                </a>
             </li>
             <li>
-                <a href="https://linkedin.com/in/jersonb" target="_blank" >Linkedin</a>
+                <a href="https://linkedin.com/in/jersonb" target="_blank">
+                    <h1>
+                        Linkedin
+                    </h1>
+                </a>
             </li>
             <li>
-                <a href="https://github.com/jersonb" target="_blank" >GitHub</a>
+                <a href="https://github.com/jersonb" target="_blank">
+                    <h1>
+                        GitHub
+                    </h1>
+                </a>
             </li>
         </ul>
     </div>
 </body>
 <script src="script.js" type="text/javascript"></script>
+
 </html>

@@ -1,15 +1,50 @@
 html {
     font-family: monospace;
-    background-color:#011F2A;
+    background-color: #011F2A;
     color: rgb(242, 242, 242);
-    font-size: larger;
+    text-align: center;
+}
+
+h1 {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    font-size: 6vw;
+}
+
+h2 {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    font-size: 5vw;
+}
+
+h3 {
+    font-size: 4vw;
+}
+
+a:link,
+:visited {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+ul{
+    list-style-image: url(imgs/favicon.ico);
+    text-align: left;
 }
 
 .background-image {
     opacity: 50%;
+    position: absolute;
+    z-index: 2;
 }
 
-.slide-template {
+.slide {
     height: 95vh;
     margin-bottom: 2em;
 
@@ -22,162 +57,70 @@ html {
 
     border-bottom-color: rgb(5, 24, 41);
     border-bottom-style: ridge;
+    padding: 5vh 5vw 5vh 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 
-    display: grid;
-    grid-template-columns: 1fr 2fr 2fr 1fr;
-    grid-template-rows: auto auto auto auto;
-    place-items: center;
 }
 
-.titulo {
-    font-size: 8vh;
-    grid-row-start: 3;
-    grid-column-start: 2;
-    grid-column-end: 4;
-
-    text-align: center;
+.opening .qr-code-content {
+    align-self: center;
 }
 
-.slide1 .nome {
-    grid-row-start: 4;
-    grid-column-start: 2;
-    grid-column-end: 4;
-    font-size: 4vh;
-}
-
-.slide1 .foto-qr-code-palestra {
+.opening .qr-code-palestra {
     width: 25vh;
-    grid-row-start: 6;
-    grid-column-start: 2;
-    grid-column-end: 4;
+    height: 25vh;
     border-radius: 2em;
     border: 6px solid black;
 }
 
-.slide2 h1 {
-    font-size: 6vh;
+.links {
+    flex-flow: column wrap;
 }
 
-.slide2 h2 {
-    font-size: 5vh;
-}
-
-.slide2 .parte1 {
-    grid-row-start: 2;
-    grid-column-start: 1;
-    grid-column-end: 5;
-}
-
-.slide2 .parte2 {
-    grid-row-start: 3;
-    grid-column-start: 1;
-    grid-column-end: 5;
-}
-
-.slide3 .foto-linkedin {
-    width: 80vh;
-    grid-row-start: 2;
-    grid-row-end: 5;
-    grid-column-start: 2;
+.links .foto-linkedin {
+    width: 60vh;
 
     border-radius: 50%;
     border: 1vh solid black;
     margin: 2em;
+    align-self: center;
 }
 
-.slide3 .foto-qr-code-linkedin {
+.links .foto-qr-code-linkedin {
     width: 40vh;
-    grid-row-start: 2;
-    grid-column-start: 3;
 
     border-radius: 15%;
     border: 1vh solid black;
-    margin-top: 2em;
+    margin-top: 4em;
 }
 
-.slide3 .foto-qr-code-github {
+.links .foto-qr-code-github {
     width: 40vh;
-    grid-row-start: 3;
-    grid-column-start: 3;
 
     border-radius: 15%;
     border: 1vh solid black;
 }
 
-.slide4 h1 {
-    font-size: 16vh;
-    grid-row-start: 2;
-    grid-column-start: 2;
-    grid-column-end: 4;
+.tdd-explanation .gif-tdd{
+
+    width: 60vh;
+    align-self: center;
+    animation: infinite;
 }
 
-.slide5 img {
-    grid-row-start: 2;
-    grid-column-start: 2;
-    grid-column-end: 4;
-    width: 64vw;
+.using-tests img{
+    width: 100vh;
+    align-self: center;
 }
 
-.slide6 h1{
-    font-size: 8vh;
-    grid-row-start: 1;
-    grid-column-start: 2;
-    grid-column-end: 4;
+.jokenpo-example img{
+    width: 100vh;
+    align-self: center;
 }
 
-.slide5 h1{
-    font-size: 8vh;
-    grid-row-start: 1;
-    grid-column-start: 2;
-    grid-column-end: 4;
-}
 
-/* .slide6 img {
-    grid-row-start: 2;
-    grid-column-start: 2;
-    grid-column-end: 4;
-    width: 120vh;
-}
-
-.slide7 img {
-    grid-row-start: 2;
-    grid-column-start: 2;
-    grid-column-end: 4;
-    width: 120vh;
-}
-
-.slide8 img {
-    grid-row-start: 2;
-    grid-column-start: 2;
-    grid-column-end: 4;
-    width: 120vh;
-} */
-
-.slide-final h1 {
-    font-size: 16vh;
-    grid-row-start: 2;
-    grid-column-start: 2;
-    grid-column-end: 4;
-}
-
-.slide-final h2 {
-    font-size: 16vh;
-    grid-row-start: 3;
-    grid-column-start: 2;
-    grid-column-end: 4;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-    text-align: center;
-}
-
-a.next-page:link,
-:visited {
-    text-decoration: inherit;
-    color: inherit;
-    cursor: auto;
+.considerations img{
+    width: 40vh;
 }
