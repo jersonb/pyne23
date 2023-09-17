@@ -31,6 +31,8 @@ a:link,
 img {
     max-width: 100%;
     max-height: 100%;
+    align-self: center;
+
 }
 
 ul{
@@ -64,9 +66,6 @@ ul{
 
 }
 
-.opening .qr-code-content {
-    align-self: center;
-}
 
 .opening .qr-code-palestra {
     width: 25vh;
@@ -101,6 +100,10 @@ ul{
 
     border-radius: 15%;
     border: 1vh solid black;
+}
+.standard-approach img{
+    
+    align-self: center;
 }
 
 .tdd-explanation .gif-tdd{
