@@ -97,30 +97,22 @@ ul{
 
 .links .foto-qr-code-github {
     width: 40vh;
-
     border-radius: 15%;
     border: 1vh solid black;
-}
-.standard-approach img{
-    
-    align-self: center;
 }
 
 .tdd-explanation .gif-tdd{
 
     width: 50vh;
-    height: 50vh;
     animation: infinite;
 }
 
 .using-tests img{
     width: 100vh;
-    align-self: center;
 }
 
 .jokenpo-example img{
     width: 100vh;
-    align-self: center;
 }
 
 
