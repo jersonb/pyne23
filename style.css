@@ -108,8 +108,8 @@ ul{
 
 .tdd-explanation .gif-tdd{
 
-    width: 60vh;
-    align-self: center;
+    width: 50vh;
+    height: 50vh;
     animation: infinite;
 }
 

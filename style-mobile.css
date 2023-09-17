@@ -12,4 +12,15 @@
         width: 20vh;
     }
 
+    h1 {
+        font-size: 6vw;
+    }
+
+    h2 {
+        font-size: 6vw;
+    }
+    
+    h3 {
+        font-size: 5vw;
+    }
 }
