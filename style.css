@@ -66,7 +66,6 @@ ul{
 
 }
 
-
 .opening .qr-code-palestra {
     width: 25vh;
     height: 25vh;
@@ -99,6 +98,10 @@ ul{
     width: 40vh;
     border-radius: 15%;
     border: 1vh solid black;
+}
+
+.standard-approach img{
+    width: 60vw;
 }
 
 .tdd-explanation .gif-tdd{
