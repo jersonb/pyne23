@@ -1,82 +1,19 @@
-<style>
-    body {
-        font-family: monospace;
-        background-color: rgb(31, 31, 31);
-        color: rgb(175, 175, 175);
-        font-size: larger;
-    }
+# Hackeando o aprendizado de lógica de programação com TDD e Python
 
-    .slide-template {
-        height: 95vh;
-        margin-bottom: 2em;
+## Python Nordeste 2023
 
-        background-image:
-            url(https://2023.pythonnordeste.org/img/assets/FITINHAS_VOANDO.png),
-            url(https://2023.pythonnordeste.org/img/assets/LOGO.png);
-        background-size: 15%, 15%;
-        background-position: top left, top right;
-        background-repeat: no-repeat;
+### Salvador - BA
 
-        border-bottom-color: rgb(5, 24, 41);
-        border-bottom-style: ridge;
+> **Palestra rápida** com o intuito de provocar as pessoas que passam conhecimento de **Lógica de Programação** a repensarem o método.
+> - E se utilizássemos o TDD como aliado? 
+> - Se o conhecimento do teste de unidade, que é extremamente valorizado, fosse repassado desde o início?
 
-        display: grid;
-        grid-template-columns: 1fr 2fr 2fr 1fr;
-        grid-template-rows: auto auto auto auto;
-    }
+Certamente a principal barreira para atuar com programação é aprender **lógica de programação**. Todos que passaram por essa etapa, escreveram diversos ifs, elses e fors em aplicações console que o resultado final sempre eram prints. E quando era alterado alguma parte da lógica e todo o seu código desmoronava?!
+O pior é que a medida que avançamos na carreira, somo incentivados e muitas vezes cobrados a escrever código de teste. Eu sempre me perguntei: Se essa é uma prática tão importante, por que não é ensinado isso logo no início?
 
-    .slide1 .title {
-        font-size: 3em;
-        grid-row-start: 3;
-        grid-column-start: 2;
-        grid-column-end: 4;
+A realidade é que os cursos formais praticamente não tem tempo para abordar o tema e os cursos não formais entregam esse conteúdo a parte. Já **eu** acredito que a melhor forma é aliar o aprendizado de lógica com teste. 
 
-        text-align: center;
-    }
+Falarei a respeito da minha experiência em que, depois de 6 anos atuando como desenvolvedor retornei a faculdade e pude perceber o aprendizado de lógica de programação de uma forma diferente.
 
-    .slide1 h1 {
-        grid-row-start: 4;
-        grid-column-start: 2;
-        grid-column-end: 4;
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5 {
-        text-align: center;
-    }
-
-    a.next-page:link,
-    :visited {
-        text-decoration: inherit;
-        color: inherit;
-        cursor: auto;
-    }
-</style>
-
-<body>
-    <a class="next-page" href="#2" id="1">
-        <div class="slide-template slide1">
-            <p class="title">Hackeando o aprendizado de lógica de programação com<br><b>TDD e Python</b></p>
-            <h1 >Jerson Brito</h1>
-        </div>
-    </a>
-    <a class="next-page" href="#3" id="2">
-        <div class="slide-template">
-            <h1>2</h1>
-        </div>
-    </a>
-    <a class="next-page" href="#4" id="3">
-        <div class="slide-template">
-            <h3>3</h3>
-        </div>
-    </a>
-    <a class="next-page" href="#1" id="4">
-        <div class="slide-template">
-            <h4>4</h4>
-        </div>
-    </a>
-
-</body>
+Acredito que pessoas de níveis diferentes de conhecimento podem se beneficiar com esse relato.
+Apresentarei código apenas como exemplo em slides, sem demonstrações.
