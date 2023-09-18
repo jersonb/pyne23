@@ -51,8 +51,8 @@ ul{
     margin-bottom: 2em;
 
     background-image:
-        url(https://2023.pythonnordeste.org/img/assets/FITINHAS_VOANDO.png),
-        url(https://2023.pythonnordeste.org/img/assets/LOGO.png);
+        url(imgs/FITINHAS_VOANDO.png),
+        url(imgs/LOGO_py_ne.png);
     background-size: 15%, 15%;
     background-position: top left, top right;
     background-repeat: no-repeat;
